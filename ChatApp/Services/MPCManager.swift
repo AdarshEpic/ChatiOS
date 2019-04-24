@@ -44,9 +44,6 @@ class MPCManager: NSObject {
         
     }
     
-    
-    
-    
     // MARK: Custom method implementation
     
     func sendData(dictionaryWithData dictionary: Dictionary<String, String>, toPeer targetPeer: MCPeerID) -> Bool {
@@ -62,10 +59,6 @@ class MPCManager: NSObject {
         }
 
     }
-
-    
-    
-    
 }
 extension MPCManager : MCSessionDelegate {
     
@@ -94,10 +87,7 @@ extension MPCManager : MCSessionDelegate {
     func session(_ session: MCSession, didReceive stream: InputStream, withName streamName: String, fromPeer peerID: MCPeerID) { }
     
     func session(_ session: MCSession, didStartReceivingResourceWithName resourceName: String, fromPeer peerID: MCPeerID, with progress: Progress) { }
-    
-   
-    
-    
+
 }
 extension MPCManager : MCNearbyServiceBrowserDelegate {
     func browser(_ browser: MCNearbyServiceBrowser, foundPeer peerID: MCPeerID, withDiscoveryInfo info: [String : String]?) {
@@ -121,8 +111,6 @@ extension MPCManager : MCNearbyServiceBrowserDelegate {
     func browser(_ browser: MCNearbyServiceBrowser, didNotStartBrowsingForPeers error: Error) {
         print(error.localizedDescription)
     }
-    
-    
 }
 extension MPCManager : MCNearbyServiceAdvertiserDelegate {
     func advertiser(_ advertiser: MCNearbyServiceAdvertiser, didReceiveInvitationFromPeer peerID: MCPeerID, withContext context: Data?, invitationHandler: @escaping (Bool, MCSession?) -> Void) {
