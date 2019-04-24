@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A24EFD122683FF300806F23 /* WiFiChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A24EFD022683FF300806F23 /* WiFiChatTableViewController.swift */; };
+		7A24EFD52268401C00806F23 /* WifiChatHeadTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A24EFD42268401C00806F23 /* WifiChatHeadTableViewController.swift */; };
+		7A24EFD82268405900806F23 /* MPCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A24EFD72268405900806F23 /* MPCManager.swift */; };
+		7A24EFDB2268414000806F23 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A24EFDA2268414000806F23 /* Protocols.swift */; };
+		7A24EFDD22684D6600806F23 /* MsgTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A24EFDC22684D6600806F23 /* MsgTableViewCell.swift */; };
 		7AC8B6AB226837850042275B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC8B6AA226837850042275B /* AppDelegate.swift */; };
-		7AC8B6AD226837850042275B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC8B6AC226837850042275B /* ViewController.swift */; };
 		7AC8B6B0226837850042275B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AC8B6AE226837850042275B /* Main.storyboard */; };
 		7AC8B6B2226837860042275B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AC8B6B1226837860042275B /* Assets.xcassets */; };
 		7AC8B6B5226837860042275B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AC8B6B3226837860042275B /* LaunchScreen.storyboard */; };
@@ -34,9 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A24EFD022683FF300806F23 /* WiFiChatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiChatTableViewController.swift; sourceTree = "<group>"; };
+		7A24EFD42268401C00806F23 /* WifiChatHeadTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiChatHeadTableViewController.swift; sourceTree = "<group>"; };
+		7A24EFD72268405900806F23 /* MPCManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPCManager.swift; sourceTree = "<group>"; };
+		7A24EFDA2268414000806F23 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		7A24EFDC22684D6600806F23 /* MsgTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsgTableViewCell.swift; sourceTree = "<group>"; };
 		7AC8B6A7226837850042275B /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AC8B6AA226837850042275B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7AC8B6AC226837850042275B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7AC8B6AF226837850042275B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7AC8B6B1226837860042275B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AC8B6B4226837860042275B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,6 +82,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A24EFCC226837DA00806F23 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7A24EFCD22683FC300806F23 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7A24EFCE22683FC700806F23 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7A24EFCF22683FD000806F23 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7A24EFD32268400300806F23 /* Chat Heads */,
+				7A24EFD222683FF800806F23 /* Chat */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7A24EFD222683FF800806F23 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				7A24EFD022683FF300806F23 /* WiFiChatTableViewController.swift */,
+				7A24EFDC22684D6600806F23 /* MsgTableViewCell.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		7A24EFD32268400300806F23 /* Chat Heads */ = {
+			isa = PBXGroup;
+			children = (
+				7A24EFD42268401C00806F23 /* WifiChatHeadTableViewController.swift */,
+			);
+			path = "Chat Heads";
+			sourceTree = "<group>";
+		};
+		7A24EFD62268404300806F23 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7A24EFD72268405900806F23 /* MPCManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7A24EFD92268413500806F23 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7A24EFDA2268414000806F23 /* Protocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		7AC8B69E226837850042275B = {
 			isa = PBXGroup;
 			children = (
@@ -97,11 +168,15 @@
 		7AC8B6A9226837850042275B /* ChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				7A24EFD92268413500806F23 /* Protocols */,
+				7A24EFD62268404300806F23 /* Services */,
+				7A24EFCF22683FD000806F23 /* Controllers */,
+				7A24EFCE22683FC700806F23 /* ViewModel */,
+				7A24EFCD22683FC300806F23 /* Model */,
+				7A24EFCC226837DA00806F23 /* View */,
+				7AC8B6D8226837BE0042275B /* storyboard */,
 				7AC8B6AA226837850042275B /* AppDelegate.swift */,
-				7AC8B6AC226837850042275B /* ViewController.swift */,
-				7AC8B6AE226837850042275B /* Main.storyboard */,
 				7AC8B6B1226837860042275B /* Assets.xcassets */,
-				7AC8B6B3226837860042275B /* LaunchScreen.storyboard */,
 				7AC8B6B6226837860042275B /* Info.plist */,
 			);
 			path = ChatApp;
@@ -123,6 +198,15 @@
 				7AC8B6CC226837860042275B /* Info.plist */,
 			);
 			path = ChatAppUITests;
+			sourceTree = "<group>";
+		};
+		7AC8B6D8226837BE0042275B /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				7AC8B6B3226837860042275B /* LaunchScreen.storyboard */,
+				7AC8B6AE226837850042275B /* Main.storyboard */,
+			);
+			path = storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +340,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AC8B6AD226837850042275B /* ViewController.swift in Sources */,
+				7A24EFDB2268414000806F23 /* Protocols.swift in Sources */,
+				7A24EFD122683FF300806F23 /* WiFiChatTableViewController.swift in Sources */,
+				7A24EFD52268401C00806F23 /* WifiChatHeadTableViewController.swift in Sources */,
+				7A24EFDD22684D6600806F23 /* MsgTableViewCell.swift in Sources */,
+				7A24EFD82268405900806F23 /* MPCManager.swift in Sources */,
 				7AC8B6AB226837850042275B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
